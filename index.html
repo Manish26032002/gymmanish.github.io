@@ -170,8 +170,7 @@ if (isset($_POST["btnsubmit"]))
     
     $sql = "INSERT INTO vikas (name, age, gender, locality) VALUES (?, ?, ?, ?)";
     $ps = $mycon->prepare($sql);
-   
-        $ps->bind_param("siss", $name, $age, $gender, $Locality);
+   $ps->bind_param("siss", $name, $age, $gender, $Locality);
         
       
     $mycon->close();
